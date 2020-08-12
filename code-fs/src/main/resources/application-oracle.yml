@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    myds:
+      autoCommit: false
+      driverClassName: oracle.jdbc.OracleDriver
+      jdbcUrl: jdbc:oracle:thin:@localhost:1521/orcl
+      maximumPoolSize: 10
+      minimumIdle: 2
+      poolName: pool-myds
+      schema: codefs
+      username: codefs
+      password: codefs
+      leakDetectionThreshold: 20000
+    autoddl: true

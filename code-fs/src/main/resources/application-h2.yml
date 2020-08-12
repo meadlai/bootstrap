@@ -1,0 +1,19 @@
+spring:
+  h2:
+   console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    databasePlatform: org.hibernate.dialect.H2Dialect
+  datasource:
+    myds:
+      autoCommit: false
+      driverClassName: org.h2.Driver
+      jdbcUrl: jdbc:h2:mem:testdb
+      maximumPoolSize: 10
+      minimumIdle: 2
+      poolName: pool-myds
+      username: sa
+      password: sa
+      leakDetectionThreshold: 20000
+    autoddl: true
